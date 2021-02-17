@@ -25,6 +25,13 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/static/slider`, // wherever background images are stored
+      }
+    },
     `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-source-wordpress`,

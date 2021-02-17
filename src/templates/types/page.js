@@ -8,36 +8,47 @@ export default ({ data }) => {
   const { page } = data
   const { title, content, featuredImage, excerpt, databaseId } = page
 
-  return (
-    <Layout
-      bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
-    >
-      <Seo title={title} description={excerpt} />
-
-      <article
-        className={`post-${databaseId} post page type-page status-publish hentry`}
-        id={`post-${databaseId}`}
+  if (title === 'home') {
+    return (
+      <Layout
+        bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        <header className="entry-header has-text-align-center header-footer-group">
-          <div className="entry-header-inner section-inner medium">
-            <h1
-              className="entry-title"
-              dangerouslySetInnerHTML={{ __html: title }}
+        <Seo title={title} description={excerpt} />
+
+        <article
+          className={`post-${databaseId} post page type-page status-publish hentry`}
+          id={`post-${databaseId}`}
+        >
+          <div className="post-inner thin">
+            <div
+              className="entry-content"
+              dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>
-        </header>
+        </article>
+      </Layout>
+    )
+  } else {
+    return (
+      <Layout
+        bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
+      >
+        <Seo title={title} description={excerpt} />
 
-        <FeaturedMedia image={featuredImage} />
-
-        <div className="post-inner thin">
-          <div
-            className="entry-content"
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
-        </div>
-      </article>
-    </Layout>
-  )
+        <article
+          className={`post-${databaseId} post page type-page status-publish hentry`}
+          id={`post-${databaseId}`}
+        >
+          <div className="post-inner thin">
+            <div
+              className="entry-content"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </div>
+        </article>
+      </Layout>
+    )
+  }
 }
 
 export const query = graphql`
