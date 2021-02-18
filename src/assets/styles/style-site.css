@@ -760,17 +760,19 @@ ul.social-icons {
 }
 
 /* BLOG POST OVERRIDES */
-.single-post #site-header {
-  /* display: none !important; */
-  background-color: transparent !important;
-}
-.single-post main#site-content {
-  margin-top: -25px !important;
+@media (max-width:700px) {
+  .single-post #site-header {
+    /* display: none !important; */
+    background-color: transparent !important;
+  }
+  .single-post main#site-content {
+    margin-top: -25px !important;
+  }
+  .single-poost .header-inner .toggle {
+    z-index: 100;
+  }
 }
 .single-post .featured-media-inner {
   margin: 0px !important;
   max-width: none !important
-}
-.single-poost .header-inner .toggle {
-  z-index: 100;
 }

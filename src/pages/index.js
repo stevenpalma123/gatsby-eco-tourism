@@ -23,18 +23,18 @@ export default () => (
             <h2>OUR POPULAR EXPERIENCES</h2>
             <div className="row">
               <div className="column">
-                <a href="/tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-1.jpg" /></a>
-                <h3><a href="/blog">RANGER FOR A DAY</a></h3>
+                <a href="/day-tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-1.jpg" /></a>
+                <h3><a href="/day-tours/ranger-for-a-day/">RANGER FOR A DAY</a></h3>
                 <p>Patrol the Golden Stream Corridor Preserve alongside a local Maya Ranger for an unparalleled experience in the Belizean jungle. You will be part of an official Ya’axché ranger patrol at an important forest corridor.</p>
               </div>
               <div className="column">
-                <a href="/tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-2.jpg" /></a>
-                <h3><a href="/blog">BIRDS OF BELIZE</a></h3>
+                <a href="/day-tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-2.jpg" /></a>
+                <h3><a href="/day-tours/ranger-for-a-day/">BIRDS OF BELIZE</a></h3>
                 <p>Explore the Golden Stream Corridor Preserve with one of our bird specialists for an early morning bird monitoring session. Belize has around 600 birds and half are at Golden Stream Corridor Preserve.</p>
               </div>
               <div className="column">
-                <a href="/tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-3.jpg" /></a>
-                <h3><a href="/blog">MAYA HEALING</a></h3>
+                <a href="/day-tours/ranger-for-a-day/" className="img-link"><img src="/images/tile-dt-3.jpg" /></a>
+                <h3><a href="/day-tours/ranger-for-a-day/">MAYA HEALING</a></h3>
                 <p>Delve into the traditional Maya medicinal world and experience a spiritual healing ceremony practiced for centuries by Maya Shamans. Presently, only a handful of Maya Healers are found in southern Belize.</p>
               </div>
             </div>
