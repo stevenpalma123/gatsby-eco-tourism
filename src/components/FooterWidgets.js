@@ -74,8 +74,8 @@ const FooterWidgets = () => {
           </div>
         </aside>
 
-        <div className="footer-top has-social-menu">
-          <FooterMenu7 />
+        <div className="footer-bottom small-menu">
+          <a href="/blog">Travel Blog</a> | <a href="/about/privacy-policy">Privacy</a> | <a href="/about/booking-policy">Booking Policy</a>
         </div>
       </div>
     </div>

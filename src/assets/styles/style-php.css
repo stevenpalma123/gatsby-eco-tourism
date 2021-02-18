@@ -410,3 +410,29 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 img {
   object-fit: contain !important;
 }
+
+/* IFRAMES */
+iframe {
+  width: 100%;
+}
+
+/* ENTRY CONTENT */
+.entry-content h1 a,
+.entry-content h2 a,
+.entry-content h3 a,
+.entry-content h4 a {
+  color: var(--primaryColor);
+}
+
+.widget li {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+@media (max-width: 700px) {
+  .widget li {
+    margin-left: 0px !important;
+  }
+}
+.widget li a {
+  font-size: 1.25rem;
+}
