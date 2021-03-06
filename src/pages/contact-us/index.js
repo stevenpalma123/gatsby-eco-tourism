@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { navigate } from 'gatsby'
 import Layout from "../../components/layout"
 import NetlifyForm from 'react-ssg-netlify-forms'
+import './contact.css'
 
 const ContactPage = () => {
 
