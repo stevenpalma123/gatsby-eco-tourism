@@ -39,7 +39,7 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
               <FaPhone />
             </UniversalLink>
             <UniversalLink
-              to="tel:5017220108"
+              to="mailto:info@ecotourismbelize.com"
             >
               <MdMail />
             </UniversalLink>

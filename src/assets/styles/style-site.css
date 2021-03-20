@@ -750,6 +750,14 @@ ul.social-icons {
   font-weight: bold;
   font-size: 3rem;
 }
+.wp-block-cover h3 {
+  font-size: 4rem;
+}
+@media (max-width: 700px) {
+  .wp-block-cover h3 {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 700px) {
   .about-columns.wp-block-columns .wp-block-cover {
     height: 200px !important;
@@ -775,4 +783,9 @@ ul.social-icons {
 .single-post .featured-media-inner {
   margin: 0px !important;
   max-width: none !important
+}
+
+/* SPECIFIC FIXES */
+.footer-top.has-social-menu {
+  padding: 0.5rem !important;
 }

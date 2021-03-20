@@ -20,7 +20,8 @@
 .landing-page .slider-wrapper .caption h2 {
   color: var(--whiteColor);
   display: inline-block;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  font-size: 4rem;
+  /* text-shadow: 1px 1px 1px rgba(0,0,0,0.6); */
 }
 .landing-page .row {
   display: flex;
@@ -30,6 +31,44 @@
   max-width: var(--largeMaxWidth);
   margin-left: auto !important;
   margin-right: auto !important;
+}
+.landing-page .slider-wrapper {
+  position: absolute !important;
+  margin-top: -120px !important;
+  width: 100%;
+  height: auto;
+  max-height: 600px !important;
+  display: inline-block;
+}
+.landing-page .slider-wrapper img {
+  max-height: 600px !important;
+  object-fit: fill !important;
+}
+.landing-page .slider-wrapper::after {
+  max-height: 600px !important;
+}
+.landing-page .post-inner {
+  width: 100% !important;
+  max-width: 100% !important;
+  /* margin-top: 0% !important; */
+  /* padding-top: 0% !important; */
+  position: relative;
+  top: 110vh;
+}
+#site-content > div.slider-wrapper > div > div > h2 {
+  position: relative;
+}
+#site-content > div.slider-wrapper > div:nth-child(2) > div > h2 {
+  top: 200px;
+}
+#site-content > div.slider-wrapper > div:nth-child(4) > div > h2 {
+  top: 100px;
+}
+#site-content > div.slider-wrapper > div:nth-child(6) > div > h2 {
+  top: -100px;
+}
+#site-content > div.slider-wrapper > div:nth-child(8) > div > h2 {
+  bottom: 100px;
 }
 @media (max-width: 600px) {
   .landing-page .row {
