@@ -9,7 +9,6 @@
 }
 .landing-page .slider-wrapper {
   position: relative !important;
-  margin-top: -120px !important;
 }
 .landing-page .slider-wrapper img {
   object-fit: fill !important;
@@ -33,27 +32,37 @@
   margin-right: auto !important;
 }
 .landing-page .slider-wrapper {
-  position: absolute !important;
-  margin-top: -120px !important;
   width: 100%;
-  height: auto;
-  max-height: 600px !important;
-  display: inline-block;
+  height: auto !important;
+  display: block;
 }
-.landing-page .slider-wrapper img {
+@media (max-width: 700px) {
+  .landing-page .slider-wrapper {
+    max-height: 200px !important;
+  }
+}
+.landing-page .slider-wrapper .gatsby-image-wrapper {
+  height: auto !important;
   max-height: 600px !important;
+}
+.landing-page .slider-wrapper .gatsby-image-wrapper img {
+  height: auto !important;
   object-fit: fill !important;
 }
-.landing-page .slider-wrapper::after {
-  max-height: 600px !important;
+.landing-page .slider-wrapper .gatsby-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--blackColor);
+  opacity: .4;
+  z-index: -1;
 }
 .landing-page .post-inner {
   width: 100% !important;
   max-width: 100% !important;
-  /* margin-top: 0% !important; */
-  /* padding-top: 0% !important; */
-  position: relative;
-  top: 110vh;
 }
 #site-content > div.slider-wrapper > div > div > h2 {
   position: relative;
@@ -68,9 +77,24 @@
   top: -100px;
 }
 #site-content > div.slider-wrapper > div:nth-child(8) > div > h2 {
-  bottom: 100px;
+  top: -200px;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  #site-content > div.slider-wrapper > div > div > h2 {
+    font-size: 3rem;
+  }
+  #site-content > div.slider-wrapper > div:nth-child(2) > div > h2 {
+    top: 0px !important;
+  }
+  #site-content > div.slider-wrapper > div:nth-child(4) > div > h2 {
+    top: -100px !important;
+  }
+  #site-content > div.slider-wrapper > div:nth-child(6) > div > h2 {
+    top: -200px !important;
+  }
+  #site-content > div.slider-wrapper > div:nth-child(8) > div > h2 {
+    top: -300px !important;
+  }
   .landing-page .row {
     display: block;
   }
@@ -89,4 +113,8 @@
 }
 .landing-page strong {
   color: var(--primaryColor);
+}
+/* OVERRIDE SLIDER */
+.slider-wrapper:after {
+  display: none;
 }
