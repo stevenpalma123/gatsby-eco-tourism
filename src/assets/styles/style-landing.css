@@ -1,6 +1,7 @@
 .landing-page .entry-content {
   margin-top: var(--marginTop) !important;
   margin-Bottom: var(--marginBottom) !important;
+  padding-top: 20px !important;
 }
 .landing-page main#site-content {
   position: relative;
