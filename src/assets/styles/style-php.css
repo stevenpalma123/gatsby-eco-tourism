@@ -466,12 +466,13 @@ iframe {
 .wp-block-cover.alignfull.has-background-dim.banner-background {
   padding: 0px !important;
 }
-.wp-block-cover.alignfull.has-background-dim.banner-background > span {
+.wp-block-cover.alignfull.has-background-dim.banner-background > .wp-block-cover__image-background {
+  position: unset !important;
   overflow: visible !important;
 }
-.wp-block-cover.alignfull.has-background-dim.banner-background > span > span {
+.wp-block-cover.alignfull.has-background-dim.banner-background > .wp-block-cover__image-background > span {
   display: contents !important;
 }
-.wp-block-cover.alignfull.has-background-dim.banner-background > span > picture > img {
+.wp-block-cover.alignfull.has-background-dim.banner-background > .wp-block-cover__image-background > picture > img {
   object-fit: cover !important;
 }
