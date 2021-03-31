@@ -461,3 +461,17 @@ iframe {
 .widget li a {
   font-size: 1.25rem;
 }
+
+/* BLOCK COVER FIX */
+.wp-block-cover.alignfull.has-background-dim.banner-background {
+  padding: 0px !important;
+}
+.wp-block-cover.alignfull.has-background-dim.banner-background > span {
+  overflow: visible !important;
+}
+.wp-block-cover.alignfull.has-background-dim.banner-background > span > span {
+  display: contents !important;
+}
+.wp-block-cover.alignfull.has-background-dim.banner-background > span > picture > img {
+  object-fit: cover !important;
+}
