@@ -462,7 +462,7 @@ iframe {
   font-size: 1.25rem;
 }
 
-/* BLOCK COVER FIX */
+/* COVER BLOCK FIX */
 .wp-block-cover.alignfull.has-background-dim.banner-background {
   padding: 0px !important;
 }
@@ -475,4 +475,10 @@ iframe {
 }
 .wp-block-cover.alignfull.has-background-dim.banner-background > .wp-block-cover__image-background > picture > img {
   object-fit: cover !important;
+}
+.wp-block-cover.alignfull.has-background-dim > * {
+  z-index: 100 !important;
+}
+.wp-block-cover.has-background-dim:after {
+  z-index: 100 !important;
 }
