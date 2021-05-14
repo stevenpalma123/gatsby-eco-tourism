@@ -9,7 +9,7 @@ const Footer = ({}) => {
       <div className="section-inner">
         <div className="footer-credits">
           <p>
-            <a href="mailto:info@ecotourismbelize.com">info@ecotourismbelize.com</a> | Office: <a href="tel:+5017220108">+501 722-0108</a> | Mobile: <a href="tel:+5016312205">+501 631-2205</a>
+            <a href="mailto:info@ecotourismbelize.com">info@ecotourismbelize.com</a> | Office: <a href="tel:+5017220108">+501 722-0108</a> | WhatsApp: <a href="tel:+5016312205">+501 652-7552</a>
           </p>
           <img src="/images/logo.png" className="etb"/>
           <div className="row">
