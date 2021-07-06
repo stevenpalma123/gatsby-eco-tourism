@@ -789,3 +789,18 @@ ul.social-icons {
 .footer-top.has-social-menu {
   padding: 0.5rem !important;
 }
+
+/* POST IMAGE FIX */
+.type-post .post-inner .entry-content .wp-block-image,
+.type-post .post-inner .entry-content .wp-block-cover-image .wp-block-cover__inner-container,
+.type-post .post-inner .entry-content .wp-block-cover.alignfull,
+.type-post .post-inner .entry-content .wp-block-cover .wp-block-cover__inner-container,
+.type-post .post-inner .entry-content [class*=__inner-container]>:not(.alignwide):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  flex-direction: row !important;
+}
+.type-post .post-inner .entry-content .wp-block-group__inner-container {
+  background: white !important;
+}
+.type-post .post-inner .entry-content .wp-block-group .wp-block-group {
+  padding: 0px !important;
+}
