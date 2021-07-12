@@ -804,3 +804,7 @@ ul.social-icons {
 .type-post .post-inner .entry-content .wp-block-group .wp-block-group {
   padding: 0px !important;
 }
+.blocks-gallery-grid,
+.wp-block-gallery {
+  margin: auto !important;
+}
